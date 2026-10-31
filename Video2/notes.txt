@@ -1,0 +1,37 @@
+CLIENT ----> SERVER -----> RESPONSE 
+
+
+HTTP-->  Hypertext Transfer Protocol
+
+
+METHODS
+GET: Used to retrieve information.
+
+POST: Used to create new information.
+
+PUT: Used to update existing information.
+
+DELETE: Used to remove information.
+
+
+
+
+
+
+STATUS CODES 
+200 means OK.
+
+201 means Created.
+
+400 means Bad Request.
+
+404 means Not Found.
+
+500 means Internal Server Error.
+
+{
+    "name": "Janvi",
+    "email": "janvi@example.com",
+    "event": "CodeFest"
+}
+
