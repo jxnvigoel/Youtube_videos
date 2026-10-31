@@ -1,0 +1,116 @@
+# ORM (Object Relational Mapping)
+
+## 1. What is ORM?
+
+ORM stands for **Object Relational Mapping**.
+
+It is a technique that allows developers to interact with relational databases using objects and methods of a programming language instead of writing SQL queries for every operation.
+
+An ORM acts as a bridge between an application and a relational database.
+
+**Example:** In a Node.js application, we can use JavaScript to create, read, update, and delete database records through an ORM.
+
+## 2. Why do we use ORM?
+
+- Reduces the need to write repetitive SQL queries.
+- Makes database operations easier using programming-language methods.
+- Improves code organization and maintainability.
+- Helps map application objects to database tables.
+- Provides a structured way to perform CRUD operations.
+- Supports database relationships and data handling.
+
+## 3. How does ORM work?
+
+ORM connects two different representations of data:
+
+| Application (JavaScript) | Database |
+|---|---|
+| Object | Row / Record |
+| Class / Model | Table |
+| Object property | Column |
+| Collection of objects | Multiple records |
+
+**Example:**
+
+JavaScript object:
+
+```javascript
+const participant = {
+    id: 1,
+    name: "Janvi",
+    event: "Hackathon"
+};
+```
+
+Corresponding database table:
+
+| id | name | event |
+|---|---|---|
+| 1 | Janvi | Hackathon |
+
+The ORM maps the JavaScript object to the corresponding database record.
+
+## 4. CRUD Operations Using ORM
+
+ORMs allow developers to perform the four basic database operations:
+
+- **Create:** Insert new records into the database.
+- **Read:** Retrieve existing records.
+- **Update:** Modify existing records.
+- **Delete:** Remove records from the database.
+
+These operations can be performed using methods provided by the ORM.
+
+## 5. Popular ORM Tools in Node.js
+
+**1. Sequelize**
+- A popular ORM for Node.js.
+- Supports PostgreSQL, MySQL, SQLite and other relational databases.
+- Uses JavaScript objects and models to interact with databases.
+
+**2. TypeORM**
+- An ORM commonly used with TypeScript and JavaScript.
+- Supports relational databases such as PostgreSQL and MySQL.
+- Supports entities and relationships.
+
+**3. Prisma**
+- A modern database toolkit for Node.js and TypeScript.
+- Provides Prisma Client to interact with databases.
+- Offers type-safe database queries.
+- Supports databases such as PostgreSQL, MySQL and SQLite.
+
+## 6. ORM vs Raw SQL
+
+| ORM | Raw SQL |
+|---|---|
+| Uses programming-language methods | Uses SQL queries directly |
+| Reduces repetitive SQL code | Requires writing SQL queries |
+| Helps organize database operations | Provides direct control over queries |
+| Can make common operations easier | Useful for complex and optimized queries |
+| Requires learning the ORM | Requires knowledge of SQL |
+
+## 7. Advantages of ORM
+
+1. Less repetitive code.
+2. Easier database interaction.
+3. Better code organization.
+4. Helps manage database relationships.
+5. Can reduce SQL injection risks when used correctly with parameterized operations.
+
+## 8. Limitations of ORM
+
+1. Requires learning the ORM's syntax and concepts.
+2. Can add some performance overhead.
+3. Complex queries may be easier to write using raw SQL.
+4. Developers still need to understand database concepts and SQL.
+
+## 9. Important Points to Remember
+
+- ORM = Object Relational Mapping.
+- ORM connects application objects with relational database records.
+- ORM does not replace the database.
+- ORM does not eliminate the need to understand SQL.
+- Popular Node.js ORM tools include Sequelize, TypeORM and Prisma.
+- ORMs are commonly used to perform CRUD operations.
+
+**Conclusion:** ORM makes database interaction easier by allowing developers to work with database records using familiar programming-language concepts instead of manually writing SQL for every operation.
